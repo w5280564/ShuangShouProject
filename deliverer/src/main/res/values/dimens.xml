@@ -1,0 +1,46 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--导航栏 start-->
+    <dimen name="tab_height">45dp</dimen>
+    <dimen name="tab_pad">15dp</dimen>
+
+    <dimen name="sp_tab_text">18sp</dimen>
+    <dimen name="sp_tab_right">13sp</dimen>
+
+
+    <!--导航栏 end-->
+
+    <dimen name="imgBack">45dp</dimen>
+    <!--line  start-->
+    <dimen name="line">1px</dimen>
+    <!--line end-->
+
+    <!--个人中心 start-->
+    <dimen name="personal_pad">15dp</dimen>
+    <!--个人中心 end-->
+
+    <!--个人信息 start-->
+    <dimen name="personalData_pad">15dp</dimen>
+    <dimen name="sp_personalData">14sp</dimen>
+    <!--个人信息 end-->
+
+    <!--个人设置 start-->
+    <dimen name="sp_set">14sp</dimen>
+    <!--个人设置 end-->
+    <dimen name="sp_edit">14sp</dimen>
+    <!--订单详情 start-->
+    <dimen name="sp_order_detail">12sp</dimen>
+    <!--答题须知 end-->
+
+    <!--问卷输入手机号码 start-->
+    <dimen name="quest_edittext_phone_line">3dp</dimen>
+    <dimen name="sp_quest_edittext_phone">15sp</dimen>
+    <!--问卷输入手机号码 end-->
+
+    <dimen name="standard_padding">8dip</dimen>
+    <dimen name="half_padding">4dip</dimen>
+
+</resources>

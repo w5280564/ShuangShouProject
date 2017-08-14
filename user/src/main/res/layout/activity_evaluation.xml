@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.lyz.shuangshoudeliverer.com.lyz.shuangshouproject.ui.activity.RecycleAddressActivity">
+
+    <include layout="@layout/include_common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_evaluation_edit"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etEvaluation"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/shape_evaluation_edit"
+            android:gravity="top|left"
+            android:hint="请输入您的评价内容"
+            android:paddingLeft="15dp"
+            android:paddingTop="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/login_edit"
+            android:cursorVisible="true"
+            android:maxLength="200"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvWordNumEvaluation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:text="0/200"
+            android:textColor="@color/login_edit" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSubmitEvaluation"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_evaluation_edit"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</LinearLayout>

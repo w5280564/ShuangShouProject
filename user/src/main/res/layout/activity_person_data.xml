@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_common_title" />
+
+    <RelativeLayout
+        android:id="@+id/relPersonDataIcon"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/personDataIcon"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iconPersonData"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            fresco:placeholderImage="@drawable/icon_default_person"
+            fresco:roundAsCircle="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relPersonDataName"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+
+        <EditText
+            android:id="@+id/etPersonDataName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:gravity="right|center_vertical"
+            android:hint="请输入姓名"
+            android:maxLength="15"
+            android:textColor="@color/black"
+            android:textColorHint="@color/personDataRight"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:textSize="@dimen/sp_personalData" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <RelativeLayout
+        android:id="@+id/relPersonDataSex"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/sex"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+
+        <TextView
+            android:id="@+id/tvPersonDataSex"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="男"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_personalData" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <RelativeLayout
+        android:id="@+id/relPersonDataPhone"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="手机号"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+
+        <EditText
+            android:id="@+id/tvPersonDataPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:gravity="right|center_vertical"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/personDataRight"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:textSize="@dimen/sp_personalData" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <LinearLayout
+        android:id="@+id/relPersonDataJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|top"
+            android:text="个性签名"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+
+
+        <EditText
+            android:id="@+id/etPersonDataSign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:gravity="center_vertical|right"
+            android:hint="请输入个性签名"
+            android:maxLength="50"
+            android:textColor="@color/black"
+            android:textColorHint="@color/personDataRight"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:textSize="@dimen/sp_personalData" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnPerInforFinish"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:text="@string/save"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

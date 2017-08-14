@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_common_title" />
+
+    <RelativeLayout
+        android:id="@+id/relPerfectIcon"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/personDataIcon"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iconPerfect"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            fresco:placeholderImage="@drawable/icon_default_person"
+            fresco:roundAsCircle="true" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/relPerfectName"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|left"
+            android:text="@string/name"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+
+        <EditText
+            android:id="@+id/etPerfectName"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="请输入您的真实姓名"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:textColor="@color/black"
+            android:textColorHint="@color/login_edit"
+            android:textSize="@dimen/sp_personalData" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <LinearLayout
+        android:id="@+id/relPerfectSex"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|left"
+            android:text="@string/sex"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+
+        <TextView
+            android:id="@+id/tvPerfectSex"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:hint="请选择您的性别"
+            android:textColor="@color/black"
+            android:textColorHint="@color/login_edit"
+            android:textSize="@dimen/sp_personalData" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <LinearLayout
+        android:id="@+id/relPerfectPhone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:text="手机号"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+
+        <EditText
+            android:id="@+id/tvPerfectPhone"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="请填写真实有效的手机号"
+            android:maxLines="1"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:textColor="@color/black"
+            android:textColorHint="@color/login_edit"
+            android:textSize="@dimen/sp_personalData" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <LinearLayout
+        android:id="@+id/relPerfectDataJob"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:paddingTop="15dp"
+            android:text="个性签名"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+
+        <EditText
+            android:id="@+id/etPerfectSign"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="left|top"
+            android:paddingTop="15dp"
+            android:maxLength="50"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:hint="请输入您的个性签名\n"
+            android:textColor="@color/black"
+            android:textColorHint="@color/login_edit"
+            android:textSize="@dimen/sp_personalData" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPerfectWordsNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="right"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="0/50"
+        android:textColor="@color/login_edit"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <Button
+        android:id="@+id/btnPerfectFinish"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_set_clear_account"
+        android:text="完成"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+</LinearLayout>

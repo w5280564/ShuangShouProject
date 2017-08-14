@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.lyz.shuangshoudeliverer.com.lyz.shuangshouproject.ui.activity.RecycleAddressActivity">
+
+    <include layout="@layout/include_common_title" />
+
+    <com.lyz.shuangshouproject.utils.customView.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.lyz.shuangshouproject.utils.customView.MyListView
+                android:id="@+id/listviewRecycleAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null">
+
+            </com.lyz.shuangshouproject.utils.customView.MyListView>
+
+            <TextView
+                android:id="@+id/tvBottomAddAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_set_clear_account"
+                android:gravity="center"
+                android:text="新增回收地址"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </com.lyz.shuangshouproject.utils.customView.MyScrollView>
+
+</LinearLayout>

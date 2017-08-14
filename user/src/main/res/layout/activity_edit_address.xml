@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="联系人"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+
+        <EditText
+            android:id="@+id/etNameEditAddress"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="请输入联系人姓名"
+            android:textColor="@color/black"
+            android:textColorHint="@color/personDataRight"
+            android:textSize="@dimen/sp_personalData" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="联系电话"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+
+        <EditText
+            android:id="@+id/etPhoneEditAddress"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:hint="请输入联系电话"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:background="@null"
+            android:maxLength="11"
+            android:textColorHint="@color/personDataRight"
+            android:textSize="@dimen/sp_personalData" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <LinearLayout
+        android:id="@+id/relDistrictAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:id="@+id/tvDistrictAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="回收地区"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tvProvinceAddress"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:gravity="center_vertical|right"
+                android:text="上海"
+                android:textSize="@dimen/sp_personalData" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/personDataLeft"
+                android:gravity="center_vertical"
+                android:text="省"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/sp_personalData" />
+            <TextView
+                android:id="@+id/tvCityAddress"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:gravity="center_vertical|right"
+                android:text="上海"
+                android:textSize="@dimen/sp_personalData" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/personDataLeft"
+                android:gravity="center_vertical"
+                android:text="市"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/sp_personalData" />
+            <TextView
+                android:id="@+id/tvZoneAddress"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:gravity="center_vertical|right"
+                android:text="浦东新区"
+                android:textSize="@dimen/sp_personalData" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/personDataLeft"
+                android:gravity="center_vertical"
+                android:text="区"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/sp_personalData" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="回收地址"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+
+        <EditText
+            android:id="@+id/etAddressEditAddress"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="请输入回收地址"
+            android:textColor="@color/black"
+            android:textColorHint="@color/personDataRight"
+            android:textSize="@dimen/sp_personalData" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <RelativeLayout
+        android:id="@+id/relaDefaultAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="设为默认地址"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_personalData" />
+        <ImageView
+            android:id="@+id/imgDefaultAddress"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/select_set_no_deafult_address_img"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnSaveEditAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="@string/save"
+            android:layout_gravity="bottom"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

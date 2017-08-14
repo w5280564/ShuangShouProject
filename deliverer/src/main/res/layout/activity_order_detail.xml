@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.lyz.shuangshoudeliverer.ui.activity.OrderDetailActivity">
+
+    <include
+        android:id="@+id/includeTitleOrderDetail"
+        layout="@layout/include_common_title" />
+
+    <com.lyz.shuangshoudeliverer.utils.customView.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvBottomBtnOrderDetail"
+        android:layout_below="@+id/includeTitleOrderDetail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="订单信息"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_order_detail" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tvScheduleOrderDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="状态：已回收"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_order_detail" />
+
+                <TextView
+                    android:id="@+id/tvTimeOrderDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:gravity="center_vertical"
+                    android:text="发布时间：已回收"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_order_detail" />
+
+                <TextView
+                    android:id="@+id/tvIssuerDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:gravity="center_vertical"
+                    android:text="发布人：已回收"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_order_detail" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvPhoneOrderDetail"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="联系电话：已回收"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_order_detail" />
+                    <TextView
+                        android:id="@+id/tvCallToUserOrderDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="拨打电话"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/sp_order_detail" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvAddressOrderDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:gravity="center_vertical"
+                    android:text="回收地址：已回收"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_order_detail" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="纸箱信息"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_order_detail" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.lyz.shuangshoudeliverer.utils.customView.MyListView
+                    android:id="@+id/listviewOrderDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.lyz.shuangshoudeliverer.utils.customView.MyListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="可获积分："
+                        android:textColor="@color/black"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvCountOrderDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="2330"
+                        android:textColor="@color/red"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvRecyclePersonOrderDetail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="回收员信息"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_order_detail" />
+
+            <LinearLayout
+                android:id="@+id/linearRecyclePersonOrderDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/imgPersonOrderDetail"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameOrderDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="姓名：宋长明"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_order_detail" />
+
+                    <TextView
+                        android:id="@+id/tvRecyclePhoneOrderDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="联系电话：1242435654"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_order_detail" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCallPhoneOrderDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_order_detail_recycle"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="3dp"
+                        android:text="拨打电话"
+                        android:textColor="@color/black"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvEvaluationOrderDetail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="评价"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_order_detail" />
+
+            <TextView
+                android:id="@+id/tvEvaluationContentOrderDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_order_detail">
+
+            </TextView>
+
+        </LinearLayout>
+    </com.lyz.shuangshoudeliverer.utils.customView.MyScrollView>
+
+    <TextView
+        android:id="@+id/tvBottomBtnOrderDetail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="确认完成回收作业"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+</RelativeLayout>

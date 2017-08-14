@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.lyz.shuangshoudeliverer.ui.activity.OrderDetailActivity">
+
+
+    <com.lyz.shuangshoudeliverer.utils.customView.ExpandableTextView
+        android:id="@+id/expandableInfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="17dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvTitleInforItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="倡导低碳生活"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_order_detail" />
+
+        <TextView
+            android:id="@+id/tvContentInforItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/information"
+            android:textColor="@color/personDataLeft"
+            android:textSize="@dimen/sp_order_detail" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tvTimeInforItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017.07.13 18:00"
+                android:textColor="@color/personDataLeft"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvPackUpInforItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="展开"
+                android:layout_centerVertical="true"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/sp_order_detail" />
+
+        </RelativeLayout>
+
+    </com.lyz.shuangshoudeliverer.utils.customView.ExpandableTextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/expandableInfor"/>
+</RelativeLayout>

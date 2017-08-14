@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/common_title_TV_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/common_title_TV_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:text="二维码扫描"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <!--<TextView
+            android:id="@+id/common_title_TV_right"
+            style="@style/common_title_TV_right"
+            android:layout_centerVertical="true" android:layout_alignParentRight="true"
+            />-->
+</RelativeLayout>

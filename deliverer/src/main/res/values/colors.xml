@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#F3F3F3</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#3bd0ea</color>
+    <color name="red">#dc3232</color>
+
+    <color name="colorTab">#000000</color>
+    <color name="colorTabText">#6B6C6E</color>
+
+    <!--背景色-->
+    <color name="colorBackground">#F7F7F7</color>
+
+
+    <!--个人中心 start-->
+    <color name="colorPersonalBg">#E6E7E9</color>
+    <color name="colorPersonalName">#000000</color>
+    <color name="colorPersonalID">#000000</color>
+    <color name="colorPersonalTab">#626262</color>
+    <!--个人中心 end-->
+
+    <color name="colorLine">#EDEDED</color>
+
+    <!--个人信息 start-->
+    <color name="personDataRight">#6C6C6C</color>  <!--108 108 108-->
+    <color name="personDataLeft">#6C6C6C</color>
+    <!--个人信息 end-->
+
+    <!--登录注册 start-->
+    <color name="login_edit">#C9C9C9</color> <!--201 201 201-->
+    <color name="login_button">#808285</color>
+    <!--登录注册 end-->
+
+    <!--答题 start-->
+    <color name="answer_known_content">#6C6C6C</color>
+    <color name="answer_content">#414141</color>
+    <!--答题 end-->
+
+
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+</resources>

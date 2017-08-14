@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.lyz.shuangshoudeliverer.ui.activity.RecycleAddressActivity">
+
+    <include layout="@layout/include_common_title" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.lyz.shuangshoudeliverer.utils.customView.MyScrollView1
+            android:id="@+id/scrollViewCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bg_points" />
+
+                    <TextView
+                        android:id="@+id/tvTotalTitalPoints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="42dp"
+                        android:text="总积分"
+                        android:textColor="@color/personDataLeft"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvTotalPoints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvTotalTitalPoints"
+                        android:layout_centerHorizontal="true"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+                </RelativeLayout>
+
+                <com.lyz.shuangshoudeliverer.utils.customView.MyListView
+                    android:id="@+id/listviewRecycleAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null">
+
+                </com.lyz.shuangshoudeliverer.utils.customView.MyListView>
+
+                <TextView
+                    android:id="@+id/tvBottomAddAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_set_clear_account"
+                    android:gravity="center"
+                    android:text="新增回收地址"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </com.lyz.shuangshoudeliverer.utils.customView.MyScrollView1>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

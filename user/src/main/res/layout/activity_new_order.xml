@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.lyz.shuangshoudeliverer.com.lyz.shuangshouproject.ui.activity.OrderDetailActivity">
+
+    <include
+        android:id="@+id/includeTitleNewOrder"
+        layout="@layout/include_common_title" />
+
+    <com.lyz.shuangshouproject.utils.customView.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearBottomNewOrder"
+        android:layout_below="@+id/includeTitleNewOrder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="回收纸箱"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_order_detail" />
+
+            <com.lyz.shuangshouproject.utils.customView.MyListView
+                android:id="@+id/listviewNewOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.lyz.shuangshouproject.utils.customView.MyListView>
+
+            <TextView
+                android:id="@+id/tvAddCartonNewOrder"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/shape_set_clear_account"
+                android:gravity="center"
+                android:text="扫码添加纸箱"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_order_detail" />
+
+
+        </LinearLayout>
+    </com.lyz.shuangshouproject.utils.customView.MyScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearBottomNewOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/linearAddressDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvPersonNewOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="联系人：Lemo"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvChangeAddressNewOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_set_clear_account"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:text="更换收货地址"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvPhoneNewOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="联系电话：1590000000"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvAddressNewOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="回收地址：上海市杨浦区 国顺东路"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAddAddressNewOrder"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="请先添加一个地址"
+            android:visibility="visible"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/personDataRight"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:textColor="@color/personDataLeft" />
+
+        <TextView
+            android:id="@+id/tvPublicNewOrder"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

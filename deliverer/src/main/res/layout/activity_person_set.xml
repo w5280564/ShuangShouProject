@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_common_title" />
+
+
+    <RelativeLayout
+        android:id="@+id/relPersonDataName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="当前版本"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_set" />
+
+        <TextView
+            android:id="@+id/tvVersionNumName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:hint="当前为最新版本"
+            android:textColor="@color/login_edit"
+            android:textSize="@dimen/sp_set" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <RelativeLayout
+        android:id="@+id/relClearCacheSet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/set_clear"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_set" />
+
+        <TextView
+            android:id="@+id/tvCacheSet"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="1.2M"
+            android:textColor="@color/login_edit"
+            android:textSize="@dimen/sp_set" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <RelativeLayout
+        android:id="@+id/relAboutSet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="关于双收"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_set" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <RelativeLayout
+        android:id="@+id/relFAQSet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/personalData_pad"
+        android:paddingRight="@dimen/personalData_pad">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="常见问题"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_set" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/colorLine" />
+
+    <Button
+        android:id="@+id/btnClearAccountSet"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_set_clear_account"
+        android:text="注销账号"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+</LinearLayout>
